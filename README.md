@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40saekitominaga%2Fcustomelements-tooltip.svg)](https://badge.fury.io/js/%40saekitominaga%2Fcustomelements-tooltip)
 
-Implement Tooltip UI component by Custom Elements.
+Implement tooltip UI component by Custom Elements.
 
 ## Demo
 
