@@ -29,17 +29,48 @@
 		<p>
 			* The element that triggers to open the tooltip can be realized with
 			<a href="https://www.npmjs.com/package/@saekitominaga/customelements-tooltip-trigger">@saekitominaga/customelements-tooltip-trigger</a>. In this demo, the
-			opening process cannot be reproduced, only the display of the tooltip opened with the `open` attribute in advance and the operation of the close button can
-			be confirmed.
+			opening process cannot be reproduced, only the display of the tooltip opened with the `open` attribute in advance and the operation of the close button
+			can be confirmed.
 		</p>
 
 		<section>
-			<h2>no attribute (Tooltips are not displayed)</h2>
+			<h2>no attribute</h2>
 
-			<pre><code></code></pre>
+			<pre><code>&lt;x-tooltip&gt;
+  &lt;div slot="tooltip"&gt;
+    &lt;p&gt;
+      Tooltip text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/x-tooltip&gt;</code></pre>
+
+			<p>* Tooltips are not displayed</p>
 
 			<div class="tooltip">
 				<x-tooltip>
+					<div slot="tooltip">
+						<p>
+							Tooltip text text text text text text text text text text text text text text text text text text text text text text text text text text text
+							text text text
+						</p>
+					</div>
+				</x-tooltip>
+			</div>
+		</section>
+
+		<section>
+			<h2>`open` attribute</h2>
+
+			<pre><code>&lt;x-tooltip open=""&gt;
+  &lt;div slot="tooltip"&gt;
+    &lt;p&gt;
+      Tooltip text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/x-tooltip&gt;</code></pre>
+
+			<div class="tooltip">
+				<x-tooltip open="">
 					<div slot="tooltip">
 						<p>
 							Tooltip text text text text text text text text text text text text text text text text text text text text text text text text text text text
@@ -57,26 +88,15 @@
 		</section>
 
 		<section>
-			<h2>`open` attribute</h2>
-
-			<pre><code></code></pre>
-
-			<div class="tooltip">
-				<x-tooltip open="">
-					<div slot="tooltip">
-						<p>
-							Tooltip text text text text text text text text text text text text text text text text text text text text text text text text text text text
-							text text text
-						</p>
-					</div>
-				</x-tooltip>
-			</div>
-		</section>
-
-		<section>
 			<h2>`close-text` attribute</h2>
 
-			<pre><code></code></pre>
+			<pre><code>&lt;x-tooltip open="" close-text="閉じる"&gt;
+  &lt;div slot="tooltip"&gt;
+    &lt;p&gt;
+      Tooltip text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/x-tooltip&gt;</code></pre>
 
 			<div class="tooltip">
 				<x-tooltip open="" close-text="閉じる">
@@ -95,7 +115,13 @@
 		<section>
 			<h2>`close-src` attribute</h2>
 
-			<pre><code></code></pre>
+			<pre><code>&lt;x-tooltip open="" close-src="data:image/svg+xml,..."&gt;
+  &lt;div slot="tooltip"&gt;
+    &lt;p&gt;
+      Tooltip text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/x-tooltip&gt;</code></pre>
 
 			<div class="tooltip">
 				<x-tooltip
