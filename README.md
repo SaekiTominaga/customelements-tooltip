@@ -10,7 +10,7 @@ Implement tooltip UI component by Custom Elements.
 
 ## Examples
 
-```
+```HTML
 <x-tooltip
   open=""
   close-text="Close"
