@@ -22,10 +22,10 @@ Implement tooltip UI component by Custom Elements.
 ## Attributes
 
 <dl>
-<dt>open [optional]</dt>
+<dt><code>open</code> [optional]</dt>
 <dd>Whether the tooltip are visible.</dd>
-<dt>close-text [optional]</dt>
+<dt><code>close-text</code> [optional]</dt>
 <dd>The text of the close button in the tooltip (Image alternative text). The default value is `Close`.</dd>
-<dt>close-src [optional]</dt>
+<dt><code>close-src</code> [optional]</dt>
 <dd>The address of the image resource for the close button in the tooltip. The default is a gray x button (SVG format).</dd>
 </dl>
