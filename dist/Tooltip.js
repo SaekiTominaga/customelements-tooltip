@@ -14,8 +14,6 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
 var _tooltipElement, _closeButtonElement, _closeButtonImageElement, _firstFocusableElement, _lastFocusableElement, _triggerElement, _closeButtonClickEventListener, _firstFocusableFocusEventListener, _lastFocusableFocusEventListener;
 /**
  * Tooltip
- *
- * @version 1.1.0
  */
 export default class Tooltip extends HTMLElement {
     constructor() {

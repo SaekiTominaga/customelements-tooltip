@@ -1,7 +1,5 @@
 /**
  * Tooltip
- *
- * @version 1.1.0
  */
 export default class Tooltip extends HTMLElement {
 	#tooltipElement: HTMLElement;
